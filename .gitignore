@@ -1,4 +1,6 @@
+
  Ignore Everything in the root except for wp-content directory
+
 /*
 !.gitignore
 !wp-content/
@@ -15,3 +17,7 @@ wp-content/*
 *.sql
 .htaccess
 .maintenance
+<<<<<<< HEAD
+
+=======
+>>>>>>> 0fc79044b27274de5e3fc48ebb580a3dec71ed5c
