@@ -164,7 +164,7 @@ function custom_loop_shortcode( $atts ) {
 		      $post_id = get_the_ID();
 
 		        if ($i == 0 ){
-			      	$output .= '<div class="col-sm-4 newest-recent-post">';
+			      	$output .= '<div class="col-sm-3 newest-recent-post">';
 				      	$output .= get_the_post_thumbnail($post_id, 'full');
 			      		
 			      			$output .= '<span class="date">';
@@ -175,7 +175,7 @@ function custom_loop_shortcode( $atts ) {
 
 		        } else {
 
-					$output .= '<div class="col-sm-4 older-recent-post">';
+					$output .= '<div class="col-sm-3 older-recent-post">';
 						$output .= '<div class="row older-post-container">';
 							$output .= get_the_post_thumbnail($post_id, 'medium');
 							
