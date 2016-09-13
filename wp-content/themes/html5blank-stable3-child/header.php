@@ -7,7 +7,7 @@
         <meta name="description" content="<?php bloginfo('description'); ?>">
 
         <meta name="description" content="" />
-    
+
     	<title>The Life I Now Live</title>
 
     	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
@@ -15,12 +15,13 @@
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
         <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-        
+
     	<?php wp_head(); ?>
-        
+
 
 
 
@@ -28,14 +29,14 @@
 
     <body>
 
-        
+
 
         <nav class="navbar navbar-transparent navbar-static-top">
                     <div class="navbar navbar-static-top navbar-custom">
                     <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="container-fluid">
                             <div class="row">
-                                
+
 
                                 <div class="col-xs-12 col-sm-6 col-md-5">
                                     <div class="row">
@@ -71,5 +72,3 @@
                         </div><!--end div class container-fluid-->
                     </div><!--end div class navbar  navbar-static-top navbar-custom-->
                 </nav>
-
-            
