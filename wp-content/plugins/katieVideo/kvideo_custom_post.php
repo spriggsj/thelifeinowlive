@@ -156,37 +156,26 @@ function custom_loop_shortcode( $atts ) {
 
 
     $the_query = new WP_Query($args);
-        $output .= '<div class="container">';
+        $output .= '<div class="container-fluid">';
             $output .= '<div class="row">';
 
-            $i = 0;
+           
 		    while ($the_query->have_posts()) : $the_query->the_post();
 		      $post_id = get_the_ID();
 
-		        if ($i == 0 ){
-			      	$output .= '<div class="col-sm-3 newest-recent-post">';
+		       
+			      	$output .= '<div class="col-sm-6 col-md-6 col-lg-3 newest-recent-post">';
 				      	$output .= get_the_post_thumbnail($post_id, 'full');
 			      		
-			      			$output .= '<span class="date">';
+			      			$output .= '<span class="katieVideo">';
 			      				$output .= get_the_content();
 			      			$output .= '</span>';
 				      	
 			      	$output .= '</div>';
 
-		        } else {
+		     
 
-					$output .= '<div class="col-sm-3 older-recent-post">';
-						$output .= '<div class="row older-post-container">';
-							$output .= get_the_post_thumbnail($post_id, 'medium');
-							
-				      			$output .= '<span class="date">';
-				      				$output .= get_the_content();
-				      			$output .= '</span>';
-							
-						$output .= '</div>';
-					$output .= '</div>';
-		        }
-				$i++;
+				
 		    endwhile;
 
 				

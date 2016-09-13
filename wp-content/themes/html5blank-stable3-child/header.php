@@ -34,8 +34,20 @@
                     <div class="navbar navbar-static-top navbar-custom">
                     <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="container-fluid">
-                            <div class="row">
-                                
+                            <div class="row primary">
+                                <?php /* Primary navigation */
+                                                    wp_nav_menu( array(
+                                                    'menu' => 'primary',
+                                                    'theme-location' => 'primary',
+                                                    'depth' => 2,
+                                                    // 'items_wrap' => my_nav_wrap(),
+                                                    'menu_class' => 'nav navbar-right ',
+                                                    'fallback-cb' => 'wp_bootstrap_navwalker::fallback',
+                                                    //Process nav menu using our custom nav walker
+                                                    'walker' => new wp_bootstrap_navwalker())
+                                                    );
+
+                                                ?>
 
                                 <div class="col-xs-12 col-sm-6 col-md-5">
                                     <div class="row">
@@ -50,19 +62,7 @@
                                         <!-- Collect the nav links, forms, and other content for toggling -->
                                         <div class="collapse navbar-collapse navHeaderCollapse">
                                             <div class="col-xs-12 main-nav">
-                                                <?php /* Primary navigation */
-                                                    wp_nav_menu( array(
-                                                    'menu' => 'primary',
-                                                    'theme-location' => 'primary',
-                                                    'depth' => 2,
-                                                    // 'items_wrap' => my_nav_wrap(),
-                                                    'menu_class' => 'nav navbar-nav ',
-                                                    'fallback-cb' => 'wp_bootstrap_navwalker::fallback',
-                                                    //Process nav menu using our custom nav walker
-                                                    'walker' => new wp_bootstrap_navwalker())
-                                                    );
-
-                                                ?>
+                                                
                                             </div>
                                         </div>
                                     </div>
