@@ -12,6 +12,83 @@
 	License URI: http://opensource.org/licenses/mit-license.php
 */
 
+@font-face {
+  font-family: magnolia_sky;
+  src: url("./fonts/magnolia_sky.otf") format("opentype");
+}
+
+
+
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.navbar-default .navbar-nav li a {
+  color: white;
+  font-family: 'Bitter', serif;
+  font-size: 20px;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+  background-color: transparent;
+  color: white;
+}
+
+.navbar-default .navbar-nav li img {
+  width: 20px;
+  height: 20px;
+}
+
+.navbar-default .navbar-nav li .circle__price {
+  width: 100px;
+  height: 100px;
+  background: red;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+}
+
+.hero__image {
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("./img/Headshot_3_nolipstickonteeth.jpg") no-repeat;
+  background-size: cover;
+  min-height: 900px;
+  width: 100%;
+  position: relative;
+  top: -120px;
+  z-index: -9999;
+}
+
+.hero__image .brush__stroke {
+  background: url("./img/purplestroke.svg") no-repeat;
+  width: 600px;
+  height: 400px;
+  position: relative;
+  top: 450px;
+  left: 505px;
+}
+
+.hero__image .brush__stroke h1 {
+  font-family: magnolia_sky;
+  font-size: 68px;
+  top: 41px;
+  left: 30px;
+  position: relative;
+  color: white;
+}
+
+.hero__image .tag__line {
+  position: relative;
+  top: 220px;
+  left: 533px;
+  width: 600px;
+}
+
+.hero__image .tag__line p {
+  color: white;
+  font-size: 26px;
+  font-family: bitter;
+}
 
 
 .footer {
@@ -22,7 +99,7 @@
     position: relative;
     min-height: 1px;
 
-   
+
 
     padding-right: 0px;
     padding-left: 0px;

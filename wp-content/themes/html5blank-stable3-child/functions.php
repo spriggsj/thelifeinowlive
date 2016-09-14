@@ -18,3 +18,7 @@ function my_method() {
 	// fires it
 	wp_enqueue_script('custom-script'); //enqueue it
 }
+
+register_nav_menus( array(
+    'primary' => __( 'Primary Menu', 'html5blank-stable3-child' ),
+) );
