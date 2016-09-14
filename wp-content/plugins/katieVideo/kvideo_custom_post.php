@@ -159,17 +159,17 @@ function custom_loop_shortcode( $atts ) {
         $output .= '<div class="container-fluid">';
             $output .= '<div class="row">';
 
-           
+
 		    while ($the_query->have_posts()) : $the_query->the_post();
 		      $post_id = get_the_ID();
 
-		       
+
 			      	$output .= '<div class="col-sm-6 col-md-6 col-lg-3 newest-recent-post">';
 				      	$output .= get_the_post_thumbnail($post_id, 'full');
 
 			      		$output .= '<div class="embed-responsive embed-responsive-4by3">';
 
-			      		
+
 
 			      			$output .= '<span class="katieVideo">';
 			      				$output .= get_the_content();
@@ -178,15 +178,16 @@ function custom_loop_shortcode( $atts ) {
 			      	$output .= '</div>';
 
 
-		    
-
-		     
 
 
-				
+
+
+
+
+
 		    endwhile;
 
-				
+
        		$output .= '</div>';
         $output .= '</div>';
 
