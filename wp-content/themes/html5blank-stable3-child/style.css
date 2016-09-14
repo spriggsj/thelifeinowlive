@@ -12,12 +12,42 @@
 	License URI: http://opensource.org/licenses/mit-license.php
 */
 
+/* Resets */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
 @font-face {
   font-family: magnolia_sky;
   src: url("./fonts/magnolia_sky.otf") format("opentype");
 }
-
-
 
 .navbar-default {
   background-color: transparent;
@@ -28,11 +58,6 @@
   color: white;
   font-family: 'Bitter', serif;
   font-size: 20px;
-}
-
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-  background-color: transparent;
-  color: white;
 }
 
 .navbar-default .navbar-nav li img {
@@ -54,9 +79,6 @@
   background-size: cover;
   min-height: 900px;
   width: 100%;
-  position: relative;
-  top: -120px;
-  z-index: -9999;
 }
 
 .hero__image .brush__stroke {
@@ -66,6 +88,8 @@
   position: relative;
   top: 450px;
   left: 505px;
+  margin: 0;
+  padding: 0;
 }
 
 .hero__image .brush__stroke h1 {
@@ -75,6 +99,8 @@
   left: 30px;
   position: relative;
   color: white;
+  margin: 0;
+  padding: 0;
 }
 
 .hero__image .tag__line {
@@ -82,6 +108,8 @@
   top: 220px;
   left: 533px;
   width: 600px;
+  margin: 0;
+  padding: 0;
 }
 
 .hero__image .tag__line p {
@@ -89,6 +117,62 @@
   font-size: 26px;
   font-family: bitter;
 }
+
+/* Self Section */
+.self {
+  background: url("./img/flowerwatercolorbackground.svg") no-repeat;
+  background-position: 50% 50%;
+  padding: 75px 0;
+  margin: 0 60px;
+}
+
+.self .self__first__col {
+  text-align: center;
+}
+
+.self .self__first__col h1 {
+  font-family: 'Bitter', 'serif';
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.self .self__first__col p {
+  font-size: 17px;
+  font-family: 'Bitter', 'serif';
+}
+
+.self .self__header {
+  font-family: magnolia_sky;
+  text-align: center;
+}
+
+.self .self__header h1 {
+  font-size: 88px;
+  position: relative;
+  top: 100px;
+}
+
+.self .self__second__col {
+  text-align: center;
+}
+
+.self .self__second__col h1 {
+  font-family: 'Bitter', 'serif';
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.self .self__second__col p {
+  font-size: 17px;
+  font-family: 'Bitter', 'serif';
+}
+
+/* end of self section */
+
+
+
 
 
 .footer {
