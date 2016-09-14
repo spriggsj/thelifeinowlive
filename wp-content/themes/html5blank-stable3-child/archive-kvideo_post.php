@@ -24,17 +24,7 @@
 				</div>
 				</div>
 
-			<?php $loop = new WP_Query( array( 'post_type' => 'kvideo_posts', 'posts_per_page' => 10 ) ); ?>
-
-				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-
-						
-				<?php	echo '<div class="video-img">' ;
-							
-							the_content();
-						echo '</div>'; 
-						endwhile; endif; ?>
-
+			
 
 			
 			<?php get_template_part('pagination'); ?>

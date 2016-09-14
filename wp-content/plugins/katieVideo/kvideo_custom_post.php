@@ -184,6 +184,7 @@ function custom_loop_shortcode( $atts ) {
 
 
 
+
 		    endwhile;
 
 
