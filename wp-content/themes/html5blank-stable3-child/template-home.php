@@ -1,10 +1,10 @@
 <?php /* Template Name: home Page Template */ get_header(); ?>
-	
+
   <main role="main">
     <!-- section -->
     <section>
 
-		
+
 
       <?php include 'content.php'; ?>
       <!--or content for original-->
@@ -17,7 +17,4 @@
     </section>
     <!-- /section -->
   </main>
-
-
-
-<?php get_footer(); ?>
+<?php get_footer() ?>
