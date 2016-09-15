@@ -44,6 +44,15 @@ body {
   height: 100%;
 }
 
+/* end of reset */
+
+.page .hero__image{
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+  url("./img/sunset.jpg");
+  background-position: 50% 50%;
+  min-height: 300px;
+}
+
 @font-face {
   font-family: magnolia_sky;
   src: url("./fonts/magnolia_sky.otf") format("opentype");
@@ -145,6 +154,7 @@ body {
 .self .self__header {
   font-family: magnolia_sky;
   text-align: center;
+  color: #202049;
 }
 
 .self .self__header h1 {
@@ -172,7 +182,60 @@ body {
 /* end of self section */
 
 
+/* sanity section */
+  .sanity{
+    background-color: #BACDB9;
+    padding: 10px 0;
+  }
 
+  .sanity__header{
+    background: url('./img/greenpaintbrush.svg') no-repeat;
+    width:500px;
+    height: 200px;
+    position: relative;
+    left: 400px;
+  }
+
+  .sanity  h1{
+    font-family: magnolia_sky;
+    font-size: 72px;
+    color: #202049;
+    position: relative;
+    top: 60px;
+    left: 140px;
+
+  }
+
+  .woocommerce ul.products li.product {
+    text-align: right;
+}
+
+.woocommerce ul.products li.product h3{
+  font-size: 25px;
+  color:white;
+  padding: 0;
+  font-family: bitter;
+  font-weight: 400;
+}
+
+.woocommerce ul.products li.product span{
+  color:white;
+  font-size: 20px;
+  font-family: bitter;
+}
+
+a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart{
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  font-size: 15px;
+}
+
+.woocommerce.columns-3 {
+    margin: 0 70px;
+}
+
+/* end of sanity section */
 
 
 .footer {
