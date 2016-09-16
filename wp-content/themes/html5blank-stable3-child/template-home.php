@@ -5,7 +5,7 @@
 
 
 
-    <section>
+
 
       <?php echo do_shortcode('[posts_items]');?>
 
@@ -21,16 +21,19 @@
 
 
 
+      <section class="sparkle">
+        <div class="sparkle__brushstroke">
+              <h1>sparkle</h1>
+        </div>
+        <?php echo do_shortcode('[custom-loop]'); ?>
+        <!--or content for original-->
+      </section>
 
-      <?php include 'content.php'; ?>
-      <!--or content for original-->
 
 
 
 
-      <?php get_template_part('pagination'); ?>
 
-    </section>
     <!-- /section -->
   </main>
 <?php get_footer() ?>
