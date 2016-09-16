@@ -314,3 +314,20 @@ a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart{
 .pagination{
 	margin-bottom: 0px;
 }
+.scriptedTitle{
+  font-family: Bitter;
+  font-size: 40px;
+}
+.aboutContent p{
+  font-family: Bitter;
+  font-size: 18px;
+}
+.aboutQuote{
+  font-size: 30px;
+  color:purple;
+}
+.aboutBio{
+  font-family: Bitter;
+  font-size: 18px;
+  padding-left: 20px;
+}
