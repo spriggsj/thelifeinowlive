@@ -46,7 +46,7 @@
           <!-- <li><a href="#">Terms of Service</a></li> -->
           <li><!-- copyright -->
           <p class="copyright">
-            &copy; <?php echo date('Y'); ?> All Rights Reserved <?php _e(); ?>
+            
             <!-- <a href="//wordpress.org" title="WordPress">WordPress</a> &amp; <a href="//html5blank.com" title="HTML5 Blank">HTML5 Blank</a>. -->
           </p>
           <!-- /copyright --></li>
