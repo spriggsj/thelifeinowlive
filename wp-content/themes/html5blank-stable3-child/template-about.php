@@ -8,7 +8,7 @@
 				<div class="row">
 					<div class="col-md-12">
 					 	<h1 class="aboutKatie"> 
-						 	<span class="">About Katie Williamson</span>
+						 	<span class="scriptedTitle">Katie Williamson</span>
 						</h1>
 						 										
 					</div>
@@ -25,11 +25,11 @@
 					I began taking one tiny step forward at a time.  And as I became more vulnerable and authentic with those around me, my life began to shift.  I discovered a passion for empowering others to ask the tough questions, and reclaim their self, sanity, and sparkle (body, mind, and spirit) to live a new life of freedom.  I began building authentic relationships with those around me, and their love and support began restoring my weary and broken heart.  Then I saw God move in ways only he can, and I was reminded at my core that no experiences we go through are wasted, and more importantly, everyone has a story to share.  We all have the power to speak light into dark situations, but we must first be brave to discover this light in our own lives.  The Life I Now Live is about discovering our limiting beliefs and overcoming them - physically, emotionally, and spiritually.  You have a gift this world needs.  It's time to reclaim it and share it with the world.
 					</p>
 					<br>
-					<div class="col-md-3">
+					<div class="col-md-4 aboutQuote">
 						 Only when we are brave enough to explore the darkness will we discover the infinite power of our light. ~Brene Brown
 					</div>
 					
-					<div class="col-md-8">
+					<div class=".col-lg-4 .offset-lg-8 aboutBio">
 						 I received my bachelor's degree in Psychology and master's degree in Sport Psychology from Fresno State, where I studied emotional and environmental factors of behavior change, obesity, and overcoming barriers to exercise.  The Life I Now Live combines my research and Christian faith to offer a comprehensive guide to discovering emotional and spiritual freedom through reclaiming your physical health.  In my spare time, I enjoy riding my motorcycle, connecting with God in his beautiful creation, catching up with friends over coffee or a great meal, painting with my mom, and going for walks with my dog, Lola.
 
 					</div>
