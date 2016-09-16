@@ -38,6 +38,7 @@ time, mark, audio, video {
 
 html {
   height: 100%;
+
 }
 
 body {
@@ -265,48 +266,95 @@ a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart{
 }
 /* end of sparkle */
 
-
-.footer {
+/*footer */
+footer {
  background-color: #000;
- width: 100%;
-}
-.nav-pills a {
-    color: #4f4e4f;
-}
-.nav-pills a:hover {
-    color: #000;
-    border-radius: 0px;
-		text-decoration: none;
-
-}
-.nav-pills .active a:hover {
-    color: blue;
-    border-radius: 0px;
-		text-decoration: none;
-
-}
-.nav>li>a:hover,
-.nav>li>a:focus {
-    background-color: #4f4e4f;
-		text-decoration: none;
-
-}
-.nav-justified{
-	font-size: 30px;
-	text-decoration: none;
+ padding-top:65px;
 
 }
 
-.col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
-    position: relative;
-    min-height: 1px;
+.contact__info{
+  margin-left: 50px;
+  font-family: Bitter;
+}
 
+.contact__info h1{
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
 
-
-    padding-right: 0px;
-    padding-left: 0px;
+.contact__info li{
+  font-size: 17px;
 
 }
+
+.social__butterfly{
+  font-family: Bitter;
+}
+
+.social__butterfly h1{
+  font-size: 28px;
+  font-style: italic;
+  margin: 0;
+  padding: 0;
+}
+
+.social__butterfly li{
+  margin-left: 5px;
+}
+
+.social__butterfly img {
+    height: 60px;
+    width: 60px;
+}
+
+.social__butterfly .col-md-2{
+  margin: 0;
+  padding: 0px;
+}
+
+.Recent__Post{
+  font-family: Bitter;
+}
+
+.Recent__Post h1{
+  font-style: italic;
+  font-size: 28px;
+  padding: 0;
+  margin: 0;
+}
+
+.Recent__Post li{
+  font-size: 17px;
+  padding: 5px 0px;
+}
+hr{
+  border-top: 1px solid #303030;
+  margin-top: 30px;
+}
+
+.the__life h1{
+  font-size: 54px;
+  font-family: magnolia_sky;
+  margin-left: 50px;
+}
+
+.copyright p{
+  font-size: 20px;
+  line-height: 7;
+  text-align: right;
+  margin-right: 60px;
+  font-family: Bitter;
+}
+
+.newest-recent-post{
+  padding: 0;
+}
+
+
 
 .primary{
 	padding-right: 30px;
@@ -314,12 +362,18 @@ a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart{
 .pagination{
 	margin-bottom: 0px;
 }
+
+/* about me page */
+.flowers{
+  padding: 50px;
+}
 .scriptedTitle{
-  font-family: Bitter;
+  font-family: magnolia_sky;
   font-size: 40px;
 }
 .aboutContent p{
   font-family: Bitter;
+  font-style: italic;
   font-size: 18px;
 }
 .aboutQuote{
