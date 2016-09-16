@@ -30,7 +30,7 @@
 
 
 
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
@@ -59,7 +59,7 @@
     </div><!-- /.container-fluid -->
   </nav>
 
-          <header>
+      <header class="<?php if (is_front_page()){echo 'home';} else { echo "page"; }?>">
             <div class="hero__image">
               <div class="brush__stroke">
                 <h1>the life I now live</h1>
