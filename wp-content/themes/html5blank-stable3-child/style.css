@@ -116,6 +116,14 @@ color:white;
   top:10px;
 }
 
+.page .hero__image .tag__line {
+  top: -243px;
+  left: 110px;
+  width: 100%;
+  font-size: 26px;
+
+}
+
 @font-face {
   font-family: magnolia_sky;
   src: url("./fonts/magnolia_sky.otf") format("opentype");
@@ -126,14 +134,14 @@ color:white;
 }
 .navbar-nav>li>a:hover{
     color:#1a1a1a;
-} 
+}
 .collapse.in{
-    
+
     background-color:#f0f0f0 !important;
 }
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus
 .spacer{
-   background-color:#888;   
+   background-color:#888;
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
   background-color: transparent;
@@ -477,11 +485,55 @@ hr{
   padding-left: 20px;
 }
 
+.testamonial__section{
+  padding: 70px 0;
+}
+
 .testamonial{
   font-family: Bitter;
-  padding: 90px 0;
+}
+
+.testamonial .quote{
+  font-size: 90px;
+  font-family: magnolia_sky;
+  position: relative;
+  bottom: 20px;
+  padding: 0;
+
+}
+
+.testamonial p{
+  font-size: 15px;
+  font-family: Bitter;
+
+  padding: 0;
+  margin-left: 40px;
+}
+
+.testamonial p span{
+  font-style: italic;
+}
+
+.testamonial .Test__Kristina{
+  margin-left: 80px;
+}
+
+.testamonial .test__marilyn{
+  margin-left: 80px;
 }
 
 .testamonial__img img{
   margin-bottom: 10px;
+}
+
+.carousel-control.right{
+  background-image: none;
+}
+
+.carousel-control.left{
+  background-image: none;
+}
+
+.text-left{
+  text-align: center;
 }
