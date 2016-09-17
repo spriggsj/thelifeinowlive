@@ -132,3 +132,96 @@ function posts_shortcode( $atts ) {
 }
 
 add_shortcode( 'posts_items', 'posts_shortcode');
+
+
+// remove default sorting dropdown
+
+remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30 );
+
+
+add_action( 'after_setup_theme', 'woocommerce_support' );
+function woocommerce_support() {
+    add_theme_support( 'woocommerce' );
+}
+
+
+/** woocommerce: change position of price on single product **/
+ remove_action( 'woocommerce_single_product_summary',
+						'woocommerce_template_single_price', 10);
+ add_action( 'woocommerce_single_product_summary',
+				 'woocommerce_template_single_price', 20 );
+
+
+// removing the woocommerce sorriting
+	remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30 );
+
+	/** Remove Showing results functionality site-wide */
+	function woocommerce_result_count() {
+	        return;
+	}
+
+
+add_filter( 'woocommerce_show_page_title' , 'woo_hide_page_title' );
+/**
+ * woo_hide_page_title
+ *
+ * Removes the "shop" title on the main shop page
+ *
+ * @access      public
+ * @since       1.0
+ * @return      void
+*/
+function woo_hide_page_title() {
+
+	return false;
+
+}
+
+
+
+if ( ! function_exists( 'woocommerce_quantity_input' ) ) {
+	function woocommerce_quantity_input( $args = array(), $product = null, $echo = true ) {
+
+		if ( is_null( $product ) )
+      $product = $GLOBALS['product'];
+
+		$defaults = array(
+		  'input_name'    => 'quantity',
+		  'input_value'   => '1',
+		  'max_value'     => apply_filters( 'woocommerce_quantity_input_max', '', $product ),
+		  'min_value'     => apply_filters( 'woocommerce_quantity_input_min', '', $product ),
+		  'step'          => apply_filters( 'woocommerce_quantity_input_step', '1', $product ),
+		  'style'         => apply_filters( 'woocommerce_quantity_style', 'margin-bottom: 10px;', $product )
+		);
+
+		if ( ! empty( $defaults['min_value'] ) )
+		$min = $defaults['min_value'];
+		else $min = 1;
+
+		if ( ! empty( $defaults['max_value'] ) )
+		$max = $defaults['max_value'];
+		else $max = 20;
+
+		if ( ! empty( $defaults['step'] ) )
+		$step = $defaults['step'];
+		else $step = 1;
+
+		$options = '';
+		for ( $count = $min; $count <= $max; $count = $count+$step ) {
+			$selected = $count === $args['input_value'] ? ' selected' : '';
+			$options .= '<option value="' . $count . '"'.$selected.'>' . $count . '</option>';
+		}
+
+		$args = apply_filters( 'woocommerce_quantity_input_args', wp_parse_args( $args, $defaults ), $product );
+
+		echo '<div class="quantity_select" style="' . $args['style'] . '"><select name="' . esc_attr( $args['input_name'] ) . '" title="' . _x( 'Qty', 'Product quantity input tooltip', 'woocommerce' ) . '" class="qty">' . $options . '</select></div>';
+
+    ob_start();
+
+    if ( $echo ) {
+        echo ob_get_clean();
+    } else {
+        return ob_get_clean();
+    }
+	}
+}
