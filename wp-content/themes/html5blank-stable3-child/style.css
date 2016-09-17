@@ -65,8 +65,28 @@ body {
   font-family: magnolia_sky;
   src: url("./fonts/magnolia_sky.otf") format("opentype");
 }
-
-.navbar-default {
+.navbar-default{
+    background:transparent;
+    border:none !important;
+}
+.navbar-nav>li>a:hover{
+    color:#1a1a1a;
+} 
+.collapse.in{
+    
+    background-color:#f0f0f0 !important;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus
+.spacer{
+   background-color:#888;   
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+  background-color: transparent;
+}
+.spacer{
+    height:100px;
+}
+/*.navbar-default {
   background-color: transparent;
   border-color: transparent;
 }
@@ -89,7 +109,7 @@ body {
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
   border-radius: 50px;
-}
+}*/
 
 .hero__image {
   background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("./img/Headshot_3_nolipstickonteeth.jpg") no-repeat;
@@ -366,22 +386,47 @@ hr{
 /* about me page */
 .flowers{
   padding: 50px;
+  background: url('./img/flowerwatercolorbackground.svg');
+  color: #000;
 }
 .scriptedTitle{
   font-family: magnolia_sky;
   font-size: 40px;
+
+}
+
+.photo__lola img{
+  border-radius: 50%;
+  padding: 10px 0;
 }
 .aboutContent p{
   font-family: Bitter;
   font-style: italic;
   font-size: 18px;
 }
-.aboutQuote{
-  font-size: 30px;
-  color:purple;
+.aboutQuote p{
+  font-family: Bitter;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 28px;
+  color:#4d4d4d;
+}
+
+.aboutQuote p span{
+  font-size: 18px;
+  font-weight: 300;
 }
 .aboutBio{
   font-family: Bitter;
   font-size: 18px;
   padding-left: 20px;
+}
+
+.testamonial{
+  font-family: Bitter;
+  padding: 90px 0;
+}
+
+.testamonial__img img{
+  margin-bottom: 10px;
 }
