@@ -45,46 +45,62 @@
     </section>
     <!-- /section -->
 
-    <section class="testamonial">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-2 testamonial__img">
-            <img src=" <?php echo get_stylesheet_directory_uri(); ?>/img/Katie_and_Lolagrayscale.jpg" alt="" />
-          </div>
-            <div class="col-md-4">
-              <p><span>"</span>
-                 Live combines my research and Christian faith to offer a comprehensive guide to discovering emotional and spiritual freedom through reclaiming your physical health.  In my spare time, I enjoy riding my motorcycle, connecting with God in his beautiful creation, catching up with friends over coffee or a great meal, painting wit
-              </p>
-            </div>
-            <div class="col-md-2 testamonial__img">
-              <img src=" <?php echo get_stylesheet_directory_uri(); ?>/img/Katie_and_Lolagrayscale.jpg" alt="" />
-            </div>
-              <div class="col-md-4">
-                <p><span>"</span>
-                   Live combines my research and Christian faith to offer a comprehensive guide to discovering emotional and spiritual freedom through reclaiming your physical health.  In my spare time, I enjoy riding my motorcycle, connecting with God in his beautiful creation, catching up with friends over coffee or a great meal, painting wit
-                </p>
+  <section class="testamonial__section">
+    <div id="carousel" class="carousel slide text-left" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="item active">
+          <div class="container testamonial">
+            <div class="row">
+              <div class="col-md-2 testamonial__img">
+                <img src=" <?php echo get_stylesheet_directory_uri(); ?>/img/TestimonialJenny.jpg" alt="" />
               </div>
+                <div class="col-md-10">
+                  <div class="col-md-1 quote">"</div>
+                  <p>
+                     Katie's program was very beneficial to my physical health! Not long after, I took an overseas trip which involved extensive walking and I felt so prepared! I was enriched by the mental and spiritual portion of the study. Katie has a depth of insight and wisdom that is refreshing and meaningful. I was very blessed and encouraged during a difficult time of grief. I feel so positive about Katie's study that I suggested our group repeat it and we are!<br>
+                     <span> ~Jenny A~</span>
+                  </p>
+                </div>
+              </div>
+          </div>
         </div>
-        <div class="row">
-          <div class="col-md-2">
-            <img src=" <?php echo get_stylesheet_directory_uri(); ?>/img/Katie_and_Lolagrayscale.jpg" alt="" />
-          </div>
-            <div class="col-md-4">
-              <p><span>"</span>
-                 Live combines my research and Christian faith to offer a comprehensive guide to discovering emotional and spiritual freedom through reclaiming your physical health.  In my spare time, I enjoy riding my motorcycle, connecting with God in his beautiful creation, catching up with friends over coffee or a great meal, painting wit
-              </p>
-            </div>
-            <div class="col-md-2 testamonial__img">
-              <img src=" <?php echo get_stylesheet_directory_uri(); ?>/img/Katie_and_Lolagrayscale.jpg" alt="" />
-            </div>
-              <div class="col-md-4">
-                <p><span>"</span>
-                   Live combines my research and Christian faith to offer a comprehensive guide to discovering emotional and spiritual freedom through reclaiming your physical health.  In my spare time, I enjoy riding my motorcycle, connecting with God in his beautiful creation, catching up with friends over coffee or a great meal, painting wit
-                </p>
+        <div class="item">
+          <div class="container testamonial">
+            <div class="row">
+              <div class="col-md-2 testamonial__img">
+                <img src=" <?php echo get_stylesheet_directory_uri(); ?>/img/TestimonialKristina.jpg" alt="" />
               </div>
+                <div class="col-md-10">
+                  <div class="col-md-1 quote">"</div>
+                  <p class="Test__Kristina">
+            I am so thankful for the group I was a part of!  I was going through post-partum after my third child and it was such a hard time for me mentally, I really didn’t have an outlet.  Then I heard about this study and I immediately said yes.  For me, it was an answer to prayer because I thought how awesome it would be for there to be a group where there was both a workout and a Bible study – working out our bodies and our souls.  After joining the class, it was way more than I expected.  I got accountability and an outlet; I felt cared for and my body started to feel normal again.  It gave me the push I needed!  I am going through the study again because as a mom of 3, I need it again!  Katie does such a good job making it all worship!  Every week, I can’t wait for the next class.  I saw a transformation in my body and my soul.  I look forward to what God will do in me through this class again.<br>
+                     <span> ~Kristina N, 35~</span>
+                  </p>
+                </div>
+              </div>
+          </div>
+        </div>
+
+
+        <div class="item">
+          <div class="container testamonial">
+            <div class="row">
+              <div class="col-md-2 testamonial__img">
+                <img src=" <?php echo get_stylesheet_directory_uri(); ?>/img/TestimonialMarilyn.jpg" alt="" />
+              </div>
+                <div class="col-md-10">
+                  <div class="col-md-1 quote">"</div>
+                  <p class="test__marilyn">
+                  I took Katie Williamson's class "The Life I now Live," last spring.  I was a little hesitant because I am 73 years old and I was afraid I wouldn't be able to keep up.  No need to fear.  The exercises were not difficult and easy to modify.  The most powerful part of the study was the discussion that went along with the curriculum.  Many basic biblical and psychological principles were interwoven into the lessons.   These principles were used to help us develop a working discipline for both the physical and spiritual areas of our lives.  Attention was given to discovering what things and attitudes blocked our progress.  I was challenged by the study and I'm planning on repeating it this fall.  I would give this study a five-star rating!<br>
+                     <span> ~Marilyn Peters, 73~</span>
+                  </p>
+                </div>
+              </div>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
   </main>
 
 
