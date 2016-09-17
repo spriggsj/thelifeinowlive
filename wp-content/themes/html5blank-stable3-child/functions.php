@@ -14,9 +14,9 @@ function my_method() {
     //sets it
 	 wp_register_script('custom-script', get_stylesheet_directory_uri() . '/min/custom-min.js', true );
 
-	wp_register_script('custom-script', get_stylesheet_directory_uri() . '/scripts/custom.js', true );
+	wp_register_script('custom-js', get_stylesheet_directory_uri() . '/scripts/custom.js', true );
 	// fires it
-	wp_enqueue_script('custom-script'); //enqueue it
+	wp_enqueue_script('custom-js'); //enqueue it
 }
 
 register_nav_menus( array(
