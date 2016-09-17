@@ -46,6 +46,61 @@ body {
 }
 
 /* end of reset */
+/* Contact 7 Forms
+--------------------------------------------- */
+
+/*form.wpcf7-form {
+background-color: #333;
+
+}*/
+
+.wpcf7-form{
+  width: 600px;
+}
+
+.wpcf7-form input, textarea{
+  width:600px;
+  border: 0px;
+  border-bottom: 1px solid gray;
+}
+
+.wpcf7-form label{
+  font-size: 15px;
+  font-family: Bitter;
+  font-style: italic;
+}
+
+.wpcf7-form-control wpcf7-text{
+width:75%;
+margin-top: 5px;
+margin-bottom: 5px;
+}
+
+input#formname {
+margin-top: 20px;
+}
+textarea.wpcf7-form-control .wpcf7-textarea{
+  height:200px;
+}
+input.wpcf7-form-control.wpcf7-submit{
+margin-bottom: 20px;
+background-color: transparent;
+border: 1px solid gray;
+width: 50%;
+font-family: Bitter;
+border-radius: 3px;
+margin-top: 20px;
+font-size: 18px;
+}
+.contactKatie{
+  padding-top: 30px;
+}
+input.wpcf7-form-control.wpcf7-submit input:hover[type="button"], input:hover[type="reset"], input:hover[type="submit"], .button:hover, .entry-content .button:hover {
+background-color: gray;
+color:white;
+}
+
+/*------------------END OF CONTACT--------------------------------*/
 
 .page .hero__image{
   background: linear-gradient(rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.03)),
