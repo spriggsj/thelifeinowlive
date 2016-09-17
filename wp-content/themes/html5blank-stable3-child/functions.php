@@ -19,6 +19,10 @@ function my_method() {
 	wp_enqueue_script('custom-js'); //enqueue it
 }
 
+wp_register_script('bootstrap', get_stylesheet_directory_uri(). '/scripts/bootstrap.min.js', array('jquery'), true);
+
+wp_enqueue_script('bootstrap');
+
 register_nav_menus( array(
     'primary' => __( 'Primary Menu', 'html5blank-stable3-child' ),
 ) );
