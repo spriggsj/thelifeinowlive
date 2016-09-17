@@ -65,8 +65,28 @@ body {
   font-family: magnolia_sky;
   src: url("./fonts/magnolia_sky.otf") format("opentype");
 }
-
-.navbar-default {
+.navbar-default{
+    background:transparent;
+    border:none !important;
+}
+.navbar-nav>li>a:hover{
+    color:#1a1a1a;
+} 
+.collapse.in{
+    
+    background-color:#f0f0f0 !important;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus
+.spacer{
+   background-color:#888;   
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+  background-color: transparent;
+}
+.spacer{
+    height:100px;
+}
+/*.navbar-default {
   background-color: transparent;
   border-color: transparent;
 }
@@ -89,7 +109,7 @@ body {
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
   border-radius: 50px;
-}
+}*/
 
 .hero__image {
   background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("./img/Headshot_3_nolipstickonteeth.jpg") no-repeat;
