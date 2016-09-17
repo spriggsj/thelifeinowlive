@@ -4,7 +4,7 @@
     <!-- section -->
     <section>
 
-			<div class="container flowers">
+			<div class="container flowers" id="startchange">
 				<div class="row">
 					<div class="col-md-12">
 					 	<h1 class="aboutKatie">
@@ -19,8 +19,8 @@
 					<br>
 					<p>
 					There came a point when I stopped running.  Not out of surrender, but out of exhaustion.  I was weary from pursuing perfection and others' approval, and I reached a place where I simply could not handle it anymore.  I realized I was at a crossroads - I could continue doing what I had always done: simply take a deep breath, put on a smile, and carry on; or, I could finally hit the pause button, become vulnerable with myself and those around me, and walk forward into the unknown.  My doubt that God would actually move in my life (even though his power had been clear since I was young) was so strong, so I clung to Jesus' words, "all you need is faith the size of a mustard seed;" that size faith was all I could give.
-					<div class="col-md-3 pull-right">
-										<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/pinterest.svg" alt="" />
+					<div class="col-sm-3 col-md-3 pull-right photo__lola">
+										<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/Katie_and_Lolagrayscale.jpg" alt="" />
 					</div>
 
 					</p>
@@ -30,21 +30,61 @@
 					</p>
 					<br>
 					<div class="col-md-4 aboutQuote">
-						 Only when we are brave enough to explore the darkness will we discover the infinite power of our light. ~Brene Brown
+            <p>
+              Only when we are brave enough to explore the darkness will we discover the infinite power of our light. <br><span>~Brene Brown</span>
+            </p>
 					</div>
 
 					<div class=".col-lg-4 .offset-lg-8 aboutBio">
-						 I received my bachelor's degree in Psychology and master's degree in Sport Psychology from Fresno State, where I studied emotional and environmental factors of behavior change, obesity, and overcoming barriers to exercise.  The Life I Now Live combines my research and Christian faith to offer a comprehensive guide to discovering emotional and spiritual freedom through reclaiming your physical health.  In my spare time, I enjoy riding my motorcycle, connecting with God in his beautiful creation, catching up with friends over coffee or a great meal, painting with my mom, and going for walks with my dog, Lola.
-
+            <p>
+              I received my bachelor's degree in Psychology and master's degree in Sport Psychology from Fresno State, where I studied emotional and environmental factors of behavior change, obesity, and overcoming barriers to exercise.  The Life I Now Live combines my research and Christian faith to offer a comprehensive guide to discovering emotional and spiritual freedom through reclaiming your physical health.  In my spare time, I enjoy riding my motorcycle, connecting with God in his beautiful creation, catching up with friends over coffee or a great meal, painting with my mom, and going for walks with my dog, Lola.
+            </p>
 					</div>
-
-
-
-
 				</div>
 			</div>
     </section>
     <!-- /section -->
+
+    <section class="testamonial">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 testamonial__img">
+            <img src=" <?php echo get_stylesheet_directory_uri(); ?>/img/Katie_and_Lolagrayscale.jpg" alt="" />
+          </div>
+            <div class="col-md-4">
+              <p><span>"</span>
+                 Live combines my research and Christian faith to offer a comprehensive guide to discovering emotional and spiritual freedom through reclaiming your physical health.  In my spare time, I enjoy riding my motorcycle, connecting with God in his beautiful creation, catching up with friends over coffee or a great meal, painting wit
+              </p>
+            </div>
+            <div class="col-md-2 testamonial__img">
+              <img src=" <?php echo get_stylesheet_directory_uri(); ?>/img/Katie_and_Lolagrayscale.jpg" alt="" />
+            </div>
+              <div class="col-md-4">
+                <p><span>"</span>
+                   Live combines my research and Christian faith to offer a comprehensive guide to discovering emotional and spiritual freedom through reclaiming your physical health.  In my spare time, I enjoy riding my motorcycle, connecting with God in his beautiful creation, catching up with friends over coffee or a great meal, painting wit
+                </p>
+              </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2">
+            <img src=" <?php echo get_stylesheet_directory_uri(); ?>/img/Katie_and_Lolagrayscale.jpg" alt="" />
+          </div>
+            <div class="col-md-4">
+              <p><span>"</span>
+                 Live combines my research and Christian faith to offer a comprehensive guide to discovering emotional and spiritual freedom through reclaiming your physical health.  In my spare time, I enjoy riding my motorcycle, connecting with God in his beautiful creation, catching up with friends over coffee or a great meal, painting wit
+              </p>
+            </div>
+            <div class="col-md-2 testamonial__img">
+              <img src=" <?php echo get_stylesheet_directory_uri(); ?>/img/Katie_and_Lolagrayscale.jpg" alt="" />
+            </div>
+              <div class="col-md-4">
+                <p><span>"</span>
+                   Live combines my research and Christian faith to offer a comprehensive guide to discovering emotional and spiritual freedom through reclaiming your physical health.  In my spare time, I enjoy riding my motorcycle, connecting with God in his beautiful creation, catching up with friends over coffee or a great meal, painting wit
+                </p>
+              </div>
+        </div>
+      </div>
+    </section>
   </main>
 
 
