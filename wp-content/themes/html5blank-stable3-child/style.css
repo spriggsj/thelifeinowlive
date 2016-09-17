@@ -366,22 +366,47 @@ hr{
 /* about me page */
 .flowers{
   padding: 50px;
+  background: url('./img/flowerwatercolorbackground.svg');
+  color: #000;
 }
 .scriptedTitle{
   font-family: magnolia_sky;
   font-size: 40px;
+
+}
+
+.photo__lola img{
+  border-radius: 50%;
+  padding: 10px 0;
 }
 .aboutContent p{
   font-family: Bitter;
   font-style: italic;
   font-size: 18px;
 }
-.aboutQuote{
-  font-size: 30px;
-  color:purple;
+.aboutQuote p{
+  font-family: Bitter;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 28px;
+  color:#4d4d4d;
+}
+
+.aboutQuote p span{
+  font-size: 18px;
+  font-weight: 300;
 }
 .aboutBio{
   font-family: Bitter;
   font-size: 18px;
   padding-left: 20px;
+}
+
+.testamonial{
+  font-family: Bitter;
+  padding: 90px 0;
+}
+
+.testamonial__img img{
+  margin-bottom: 10px;
 }
