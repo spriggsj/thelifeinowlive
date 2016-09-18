@@ -1144,3 +1144,21 @@ tr.cart_item td.product-name {
 }
 
 /*woocommerce */
+/*single-blog-post*/
+.k-post-single{
+  padding-top: 20px;
+}
+.k-post-title{
+  font-size: 35px;
+  font-family: Bitter;
+}
+.k-post-content{
+  font-size: 24px;
+  font-family: Bitter;
+}
+.rightHandPull{
+  width:300px;
+  float: right;
+}
+
+/* end single style */
