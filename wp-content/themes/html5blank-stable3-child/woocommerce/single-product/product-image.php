@@ -22,7 +22,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 global $post, $product;
 ?>
-<div class="images col-md-4">
+
+				<div class="col-md-4">
+
+
+
+
 	<?php
 		if ( has_post_thumbnail() ) {
 			$attachment_count = count( $product->get_gallery_attachment_ids() );
@@ -40,4 +45,7 @@ global $post, $product;
 
 		do_action( 'woocommerce_product_thumbnails' );
 	?>
+
+
+
 </div>

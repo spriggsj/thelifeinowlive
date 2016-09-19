@@ -30,108 +30,108 @@ register_nav_menus( array(
 
 /* short code for "self" post */
 
-// function jk_excerpt_length( $length) {
-//         return 24;
-//     }
-//     add_filter( 'excerpt_length', 'jk_excerpt_length', 999 );
+function jk_excerpt_length( $length) {
+        return 24;
+    }
+    add_filter( 'excerpt_length', 'jk_excerpt_length', 999 );
 
-// 		function jk_excerpt_more( $more ) {
-// 			return '...Read More';
-// 	}
-// 	add_filter( 'excerpt_more', 'jk_excerpt_more' );
+		function jk_excerpt_more( $more ) {
+			return '...Read More';
+	}
+	add_filter( 'excerpt_more', 'jk_excerpt_more' );
 
-// function posts_shortcode( $atts ) {
-//     $output = '';
-//     $custom_loop_atts = shortcode_atts(
-//       [
-//           'type'  =>  'post',
-//       ], $atts
-//     );
+function posts_shortcode( $atts ) {
+    $output = '';
+    $custom_loop_atts = shortcode_atts(
+      [
+          'type'  =>  'post',
+      ], $atts
+    );
 
-//     $post_type = $custom_loop_atts['type'];
-//     $args = array(
-//         'post_type'     => $post_type,
-//         'post_status'   => 'publish',
-//         'order' => 'date',
-//         'posts_per_page' => 5
-//     );
+    $post_type = $custom_loop_atts['type'];
+    $args = array(
+        'post_type'     => $post_type,
+        'post_status'   => 'publish',
+        'order' => 'date',
+        'posts_per_page' => 5
+    );
 
-//     $the_query = new WP_Query($args);
+    $the_query = new WP_Query($args);
 
-//     $output .= '<section class="self">';
-//       $output .= '<div class="container-fluid">';
-//         $output .= '<div class="row">';
-
-
-
-
-// 		$i = 0;
-//     while ($the_query->have_posts()) : $the_query->the_post();
-//         $post_id = get_the_ID();
-// 				if ($i == 0){
-// 					$output .= '<div class="col-md-4 self__first__col">';
-// 						$output .= '<h1>';
-// 							$output .= get_the_title();
-// 						$output .= '</h1>';
-// 						$output .= '<p>';
-// 							$output .= get_the_excerpt();
-// 						$output .= '</p>';
-// 				}
-// 				elseif ($i==1){
-// 					$output .= '<h1>';
-// 						$output .= get_the_title();
-// 					$output .= '</h1>';
-// 					$output .= '<p>';
-// 						$output .= get_the_excerpt();
-// 					$output .= '</p>';
-// 					$output .= '</div>';
-// 				}
-// 				elseif ($i==2){
-// 					$output .= '<div class="col-md-4 self__header">';
-// 						$output .= '<h1>';
-// 							$output .= 'self';
-// 						$output .= '</h1>';
-// 					$output .= '</div>';
-
-// 				}
-// 				elseif ($i==3){
-// 					$output .= '<div class="col-md-4 self__second__col">';
-// 					$output .= '<h1>';
-// 						$output .= get_the_title();
-// 					$output .= '</h1>';
-// 					$output .= '<p>';
-// 						$output .= get_the_excerpt();
-// 					$output .= '</p>';
-// 				}
-
-// 				else{
-// 					$output .= '<h1>';
-// 						$output .= get_the_title();
-// 					$output .= '</h1>';
-// 					$output .= '<p>';
-// 						$output .= get_the_excerpt();
-// 					$output .= '</p>';
-// 					$output .= '</div>';
-// 				}
+    $output .= '<section class="self">';
+      $output .= '<div class="container-fluid">';
+        $output .= '<div class="row">';
 
 
 
 
+		$i = 0;
+    while ($the_query->have_posts()) : $the_query->the_post();
+        $post_id = get_the_ID();
+				if ($i == 0){
+					$output .= '<div class="col-md-4 self__first__col">';
+						$output .= '<h1>';
+							$output .= get_the_title();
+						$output .= '</h1>';
+						$output .= '<p>';
+							$output .= get_the_excerpt();
+						$output .= '</p>';
+				}
+				elseif ($i==1){
+					$output .= '<h1>';
+						$output .= get_the_title();
+					$output .= '</h1>';
+					$output .= '<p>';
+						$output .= get_the_excerpt();
+					$output .= '</p>';
+					$output .= '</div>';
+				}
+				elseif ($i==2){
+					$output .= '<div class="col-md-4 self__header">';
+						$output .= '<h1>';
+							$output .= 'self';
+						$output .= '</h1>';
+					$output .= '</div>';
 
-// 		$i++;
-//     endwhile;
+				}
+				elseif ($i==3){
+					$output .= '<div class="col-md-4 self__second__col">';
+					$output .= '<h1>';
+						$output .= get_the_title();
+					$output .= '</h1>';
+					$output .= '<p>';
+						$output .= get_the_excerpt();
+					$output .= '</p>';
+				}
 
-// 		$output .= '</div>';
-// 		$outout .= '</div>';
-// 		$output .= '</section>';
+				else{
+					$output .= '<h1>';
+						$output .= get_the_title();
+					$output .= '</h1>';
+					$output .= '<p>';
+						$output .= get_the_excerpt();
+					$output .= '</p>';
+					$output .= '</div>';
+				}
 
 
-//   return $output;
-//   wp_reset_postdata();
 
-// }
 
-// add_shortcode( 'posts_items', 'posts_shortcode');
+
+		$i++;
+    endwhile;
+
+		$output .= '</div>';
+		$outout .= '</div>';
+		$output .= '</section>';
+
+
+  return $output;
+  wp_reset_postdata();
+
+}
+
+add_shortcode( 'posts_items', 'posts_shortcode');
 
 
 // remove default sorting dropdown
@@ -225,3 +225,101 @@ if ( ! function_exists( 'woocommerce_quantity_input' ) ) {
     }
 	}
 }
+
+
+/* woocomerce */
+
+/* removes desctiption and review tabs */
+add_filter( 'woocommerce_product_tabs', 'woo_remove_product_tabs', 98 );
+
+function woo_remove_product_tabs( $tabs ) {
+
+    unset( $tabs['description'] );      	// Remove the description tab
+    unset( $tabs['reviews'] ); 			// Remove the reviews tab
+    unset( $tabs['additional_information'] );  	// Remove the additional information tab
+
+    return $tabs;
+
+}
+
+/* end remove */
+
+/* removes the bread crumb */
+
+add_action( 'init', 'jk_remove_wc_breadcrumbs' );
+function jk_remove_wc_breadcrumbs() {
+    remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0 );
+}
+
+/* end of remove bread crumb */
+
+
+function woocommerce_template_product_description() {
+woocommerce_get_template( 'single-product/tabs/description.php' );
+}
+add_action( 'woocommerce_single_product_summary', 'woocommerce_template_product_description', 20 );
+
+/* end of woocoomerce */
+
+/* pagantatnion for blog archive page */
+
+function custom_pagination($numpages = '', $pagerange = '', $paged='') {
+
+  if (empty($pagerange)) {
+    $pagerange = 2;
+  }
+
+  /**
+   * This first part of our function is a fallback
+   * for custom pagination inside a regular loop that
+   * uses the global $paged and global $wp_query variables.
+   *
+   * It's good because we can now override default pagination
+   * in our theme, and use this function in default quries
+   * and custom queries.
+   */
+  global $paged;
+  if (empty($paged)) {
+    $paged = 1;
+  }
+  if ($numpages == '') {
+    global $wp_query;
+    $numpages = $wp_query->max_num_pages;
+    if(!$numpages) {
+        $numpages = 1;
+    }
+  }
+
+
+  /**
+   * We construct the pagination arguments to enter into our paginate_links
+   * function.
+   */
+  $pagination_args = array(
+    'base'            => get_pagenum_link(1) . '%_%',
+    'format'          => 'page/%#%',
+    'total'           => $numpages,
+    'current'         => $paged,
+    'show_all'        => False,
+    'end_size'        => 1,
+    'mid_size'        => $pagerange,
+    'prev_next'       => True,
+    'prev_text'       => __('&laquo;'),
+    'next_text'       => __('&raquo;'),
+    'type'            => 'plain',
+    'add_args'        => false,
+    'add_fragment'    => ''
+  );
+
+  $paginate_links = paginate_links($pagination_args);
+
+  if ($paginate_links) {
+    echo "<nav class='custom-pagination'>";
+      echo "<span class='page-numbers page-num'>Page " . $paged . " of " . $numpages . "</span> ";
+      echo $paginate_links;
+    echo "</nav>";
+  }
+
+}
+
+/* end of pagantatnion for blog archive page */
