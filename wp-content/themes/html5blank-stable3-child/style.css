@@ -1049,3 +1049,62 @@ tr.cart_item td.product-name {
 
 
 /* end of archive style page */
+
+/* media Query Area */
+
+@media screen and (max-width: 768px) {
+    .hero__image .brush__stroke  {
+        left:0px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .page .hero__image .tag__line p  {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .hero__image .brush__stroke  {
+       left:10px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .page .hero__image .tag__line  {
+       left:10px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .hero__image .brush__stroke h1 {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .hero__image .brush__stroke {
+        width:500px;
+        left:0px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .the__life h1 {
+        font-size: 24px
+    }
+}
+
+@media screen and (max-width: 480px){
+  .Recent__Post{
+          float: right;
+          margin-top: -250px;
+          padding-right: 15px;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .copyright p{
+          line-height: 1em;
+          margin-bottom: 15px;
+  }
+}
