@@ -34,7 +34,14 @@ get_header( 'shop' ); ?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
+			<div class="container-fluid">
+				<div class="row">
+
+
 			<?php wc_get_template_part( 'content', 'single-product' ); ?>
+		</div>
+	</div>
+
 
 		<?php endwhile; // end of the loop. ?>
 
