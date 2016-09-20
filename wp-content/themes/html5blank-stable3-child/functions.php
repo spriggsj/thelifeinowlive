@@ -337,14 +337,12 @@ function custom_pagination($numpages = '', $pagerange = '', $paged='') {
 function my_nav_wrap() {
     $wrap  = '<ul id="%1$s" class="%2$s">';
     $wrap .= '%3$s';
-    $wrap .= '<li>';
     $wrap .= '<a class="cart-contents" href="' . WC()->cart->get_cart_url() . '">';
 		$wrap .= '<img src="' . get_stylesheet_directory_uri() . '/img/cart.svg"/>';
 		$wrap .= '<span class="circle__price">';
     $wrap .= WC()->cart->get_cart_contents_count();
 		$wrap .= '</span>';
     $wrap .= '</a>';
-    $wrap .= '</li>';
     $wrap .= '</ul>';
 
   return $wrap;
