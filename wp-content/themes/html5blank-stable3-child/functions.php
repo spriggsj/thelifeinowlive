@@ -69,7 +69,7 @@ function posts_shortcode( $atts ) {
     while ($the_query->have_posts()) : $the_query->the_post();
         $post_id = get_the_ID();
 				if ($i == 0){
-					$output .= '<div class="col-md-4 self__first__col">';
+					$output .= '<div class="col-sm-4 col-md-4 self__first__col">';
 						$output .= '<h1>';
 							$output .= get_the_title();
 						$output .= '</h1>';
@@ -87,7 +87,7 @@ function posts_shortcode( $atts ) {
 					$output .= '</div>';
 				}
 				elseif ($i==2){
-					$output .= '<div class="col-md-4 self__header">';
+					$output .= '<div class="col-sm-4 col-md-4 self__header">';
 						$output .= '<h1>';
 							$output .= 'self';
 						$output .= '</h1>';
@@ -95,7 +95,7 @@ function posts_shortcode( $atts ) {
 
 				}
 				elseif ($i==3){
-					$output .= '<div class="col-md-4 self__second__col">';
+					$output .= '<div class="col-sm-4 col-md-4 self__second__col">';
 					$output .= '<h1>';
 						$output .= get_the_title();
 					$output .= '</h1>';
@@ -337,12 +337,14 @@ function custom_pagination($numpages = '', $pagerange = '', $paged='') {
 function my_nav_wrap() {
     $wrap  = '<ul id="%1$s" class="%2$s">';
     $wrap .= '%3$s';
+    $wrap .= '<li>';
     $wrap .= '<a class="cart-contents" href="' . WC()->cart->get_cart_url() . '">';
 		$wrap .= '<img src="' . get_stylesheet_directory_uri() . '/img/cart.svg"/>';
 		$wrap .= '<span class="circle__price">';
     $wrap .= WC()->cart->get_cart_contents_count();
 		$wrap .= '</span>';
     $wrap .= '</a>';
+    $wrap .= '</li>';
     $wrap .= '</ul>';
 
   return $wrap;
@@ -358,12 +360,12 @@ add_filter( 'woocommerce_add_to_cart_fragments', 'woocommerce_header_add_to_cart
 function woocommerce_header_add_to_cart_fragment( $fragments ) {
 	ob_start();
 	?>
-	<li>
+
     <a class="cart-contents" href="<?php echo WC()->cart->get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>">
       <?php echo '<img src="' . get_stylesheet_directory_uri() . '/img/cart.svg"/>';?>
       <?php echo '<span class="circle__price">' . sprintf (_n( '%d', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ) . '</span>'; ?>
     </a>
-	</li>
+
 
 
 
