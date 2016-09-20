@@ -84,8 +84,8 @@ body {
   src: url("./fonts/magnolia_sky.otf") format("opentype");
 }
 .navbar-default{
-    background:transparent;
-    border:none !important;
+  background: transparent;
+  border:none !important;
 }
 .navbar-nav>li>a:hover{
     color:#1a1a1a;
@@ -115,6 +115,7 @@ body {
 .navbar-default .navbar-nav li img {
   width: 20px;
   height: 20px;
+  /*margin-top: 16px;*/
 }
 
 .navbar-default .navbar-nav>.active>a{
@@ -122,12 +123,24 @@ body {
 }
 
 .navbar-default .navbar-nav li .circle__price {
-  width: 100px;
-  height: 100px;
-  background: red;
+  width: 20px;
+  height: 20px;
+  background: #d28bea;
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
-  border-radius: 50px;
+  border-radius: 83%;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  line-height: 2.3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+
+.navbar-right{
+  margin-right: 0px;
 }
 
 .hero__image {
@@ -1072,61 +1085,186 @@ tr.cart_item td.product-name {
 
 /* media Query Area */
 
-@media screen and (max-width: 1024px) {
-    .hero__image .brush__stroke  {
-       left:10px;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .page .hero__image .tag__line  {
-       left:10px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .hero__image .brush__stroke  {
-        left:0px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .page .hero__image .tag__line p  {
-        display: none;
-    }
-}
-
-
-@media screen and (max-width: 480px) {
-    .hero__image .brush__stroke h1 {
-        font-size: 30px;
-    }
-}
-@media screen and (max-width: 480px) {
+@media (max-width:1030px){
     .hero__image .brush__stroke {
-        width:500px;
-        left:0px;
+        background: url(./img/purplestroke.svg) no-repeat;
+        width: 600px;
+        height: 400px;
+        position: relative;
+        top: 465px;
+        left: 378px;
+        margin: 0 !important;
+        padding: 0;
     }
-}
-
-
-@media screen and (max-width: 480px) {
-    .the__life h1 {
-        font-size: 24px
+    .hero__image .tag__line {
+      left: 370px;
     }
+
+    .sparkle__brushstroke {
+      left: 260px;
+  }
+
+  .sanity__header {
+      left: 269px;
+  }
+
+  .the__life h1 {
+      font-size: 46px;
+  }
+
 }
 
-@media screen and (max-width: 480px){
-  .Recent__Post{
-          float: right;
-          margin-top: -250px;
-          padding-right: 15px;
-  }
+@media (max-width:778px){
+  .hero__image .brush__stroke {
+    top: 580px;
+    width: 506px;
+    left: 79px;
+
 }
 
-@media screen and (max-width: 480px){
-  .copyright p{
-          line-height: 1em;
-          margin-bottom: 15px;
-  }
+.hero__image .brush__stroke h1 {
+    font-size: 53px;
+
+}
+.hero__image .tag__line {
+    top: 324px;
+    left: 100px;
+}
+
+.sanity__header {
+    left: 129px;
+}
+
+.sparkle__brushstroke {
+    left: 120px;
+}
+
+.the__life h1 {
+    font-size: 35px;
+}
+
+}
+
+@media (max-width:435px){
+  .hero__image {
+    min-height: 500px;
+
+}
+
+  .hero__image .brush__stroke {
+    width: 379px;
+    left: 17px;
+    top: 300px;
+}
+
+.hero__image .brush__stroke h1 {
+    font-size: 39px;
+    top: 26px;
+}
+.hero__image .tag__line p {
+    font-size: 20px;
+    word-wrap: break-word;
+
+}
+.hero__image .tag__line {
+    left: 29px;
+    width: 360px;
+    top: 0;
+}
+
+.sanity__header {
+    left: 63px;
+    width: 320px;
+}
+
+.sanity h1 {
+  top: 18px;
+  left: 20px;
+
+}
+
+.sparkle__brushstroke {
+    left: 20px;
+    width: 320px;
+}
+
+
+.sparkle__brushstroke h1 {
+    font-size: 56px;
+    top: 31px;
+    left: 44px;
+}
+
+.contact__info li {
+    font-size: 15px;
+}
+.contact__info h1 {
+    font-size: 18px;
+
+
+}
+.social__butterfly h1 {
+    font-size: 15px;
+
+}
+.social__butterfly img {
+  height: 30px;
+  width: 71px;
+}
+
+
+.contact__info{
+  margin-left: 0px;
+}
+.Recent__Post h1 {
+    font-size: 14px;
+
+}
+
+.Recent__Post li {
+    font-size: 10px;
+    padding: 5px 0px;
+}
+
+}
+
+@media (max-width:375px) {
+
+.hero__image .brush__stroke {
+    width: 300px;
+
+}
+
+
+.hero__image .brush__stroke h1 {
+    font-size: 30px;
+    top:20px;
+}
+
+.hero__image .tag__line {
+    width: 335px;
+
+}
+
+.sanity__header {
+    left: 39px;
+    width: 283px;
+}
+
+
+.sparkle__brushstroke {
+    left: 8px;
+
+}
+
+.contact__info li {
+    font-size: 13px;
+}
+.social__butterfly img {
+    width: 57px;
+}
+.the__life h1 {
+    font-size: 28px;
+}
+
 }
