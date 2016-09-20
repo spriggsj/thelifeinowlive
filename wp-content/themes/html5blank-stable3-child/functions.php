@@ -244,6 +244,8 @@ function woo_remove_product_tabs( $tabs ) {
 
 /* end remove */
 
+
+
 /* removes the bread crumb */
 
 add_action( 'init', 'jk_remove_wc_breadcrumbs' );
@@ -258,6 +260,9 @@ function woocommerce_template_product_description() {
 woocommerce_get_template( 'single-product/tabs/description.php' );
 }
 add_action( 'woocommerce_single_product_summary', 'woocommerce_template_product_description', 20 );
+
+
+
 
 /* end of woocoomerce */
 
@@ -323,3 +328,50 @@ function custom_pagination($numpages = '', $pagerange = '', $paged='') {
 }
 
 /* end of pagantatnion for blog archive page */
+
+
+
+
+/* cart static li function and cart update function */
+
+function my_nav_wrap() {
+    $wrap  = '<ul id="%1$s" class="%2$s">';
+    $wrap .= '%3$s';
+    $wrap .= '<a class="cart-contents" href="' . WC()->cart->get_cart_url() . '">';
+		$wrap .= '<img src="' . get_stylesheet_directory_uri() . '/img/cart.svg"/>';
+		$wrap .= '<span class="circle__price">';
+    $wrap .= WC()->cart->get_cart_contents_count();
+		$wrap .= '</span>';
+    $wrap .= '</a>';
+    $wrap .= '</ul>';
+
+  return $wrap;
+}
+
+
+
+
+
+// Ensure cart contents update when products are added to the cart via AJAX (place the following in functions.php)
+add_filter( 'woocommerce_add_to_cart_fragments', 'woocommerce_header_add_to_cart_fragment' );
+
+function woocommerce_header_add_to_cart_fragment( $fragments ) {
+	ob_start();
+	?>
+	<li>
+    <a class="cart-contents" href="<?php echo WC()->cart->get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>">
+      <?php echo '<img src="' . get_stylesheet_directory_uri() . '/img/cart.svg"/>';?>
+      <?php echo '<span class="circle__price">' . sprintf (_n( '%d', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ) . '</span>'; ?>
+    </a>
+	</li>
+
+
+
+	<?php
+
+	$fragments['a.cart-contents'] = ob_get_clean();
+
+	return $fragments;
+}
+
+/* end of cart function */

@@ -104,10 +104,7 @@ body {
 .spacer{
     height:100px;
 }
-/*.navbar-default {
-  background-color: transparent;
-  border-color: transparent;
-}
+
 
 .navbar-default .navbar-nav li a {
   color: white;
@@ -120,6 +117,10 @@ body {
   height: 20px;
 }
 
+.navbar-default .navbar-nav>.active>a{
+  color: white;
+}
+
 .navbar-default .navbar-nav li .circle__price {
   width: 100px;
   height: 100px;
@@ -127,7 +128,7 @@ body {
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
   border-radius: 50px;
-}*/
+}
 
 .hero__image {
   background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("./img/Headshot_3_nolipstickonteeth.jpg") no-repeat;
@@ -640,7 +641,15 @@ color:white;
   font-family: Bitter;
 }
 
+.single__shop__page{
+  padding: 40px 0px;
+}
+
 /*end of woo single */
+
+.sidebar{
+  display: none;
+}
 
 
 
@@ -665,8 +674,9 @@ color:white;
   font-weight: 600;
 }
 
-#content {
-  padding: 20px 0;
+/*shop page */
+.shop__container {
+  padding: 60px;
 }
 
 #content .products {
@@ -679,7 +689,7 @@ color:white;
 }
 
 #content .products li h3 {
-  font-size: 2.2em;
+  font-size: 20px;
   margin: 5px 0;
 }
 
@@ -693,14 +703,15 @@ color:white;
 }
 
 #content .products li .button {
-  background-color: #00a388;
-  color: #ffffff;
+  background-color: transparent;
+  border: 1px solid gray;
   padding: 6px;
+  color:black;
   border-radius: 4px;
   margin-left: 10px;
-  text-transform: uppercase;
-  font-weight: 700;
 }
+
+/* end of shop page */
 
 a.added_to_cart.wc-forward {
   background-color: #067a67;
@@ -761,10 +772,13 @@ div#text-2 .cart-contents {
   color: blue !important;
 }
 
+
+/* cart page */
 thead {
-  background-color: #00a388;
+  background-color: gray;
   color: #ffffff;
   font-size: 1.3em;
+  font-family: Bitter;
 }
 
 thead .product-name {
@@ -795,8 +809,8 @@ td.product-name {
 }
 
 td.product-name a {
-  font-size: 1.4em;
-  text-transform: uppercase;
+  font-size: 1.2em;
+  font-family: Bitter;
 }
 
 td.product-price {
@@ -806,7 +820,7 @@ td.product-price {
 td.product-price .woocommerce-Price-amount {
   font-size: 1.6em;
   font-weight: 700;
-  color: #00a388;
+  color: gray;
 }
 
 td.product-quantity {
@@ -816,7 +830,7 @@ td.product-quantity {
 td.product-subtotal .woocommerce-Price-amount {
   font-size: 1.6em;
   font-weight: 700;
-  color: #00a388;
+  color: gray;
 }
 
 .actions .coupon .input-text {
@@ -824,23 +838,25 @@ td.product-subtotal .woocommerce-Price-amount {
   width: 150px !important;
   height: 30px;
   border-style: none;
-  border: 1px solid #c6c6c6;
+  border: 1px solid gray;
   font-weight: 800;
   padding-left: 30px;
   text-transform: capitalize;
 }
 
 .actions .coupon input.button {
-  background-color: #00a388;
-  color: #ffffff;
+  background-color: transparent;
+  border: 1px solid gray;
+  color: gray !important;
   margin-left: 20px;
   padding: 16px !important;
   line-height: 0;
 }
 
 .actions input.button {
-  background-color: #00a388;
-  color: #ffffff !important;
+  background-color: transparent;
+  border: 1px solid gray;
+  color: gray !important;
   margin-left: 20px;
   padding: 16px !important;
   opacity: 1 !important;
@@ -859,7 +875,7 @@ tr.cart-subtotal th {
 }
 
 tr.cart-subtotal td {
-  background-color: rgba(0, 163, 136, 0.6);
+  background-color: rgba(73, 75, 75, 0.6);
   color: #ffffff;
   font-size: 1.5em;
   font-weight: 800;
@@ -872,7 +888,7 @@ tr.tax-rate th {
 }
 
 tr.tax-rate td {
-  background-color: rgba(0, 163, 136, 0.6);
+  background-color: rgba(73, 75, 75, 0.6);
   color: #ffffff;
   font-size: 1.5em;
   font-weight: 800;
@@ -885,17 +901,21 @@ tr.order-total th {
 }
 
 tr.order-total td {
-  background-color: rgba(0, 163, 136, 0.6);
+  background-color: rgba(73, 75, 75, 0.6);
   color: #ffffff;
   font-size: 1.5em;
   font-weight: 800;
 }
 
 .woocommerce a.checkout-button.button.alt.wc-forward {
-  background-color: #00a388;
+  background-color: transparent;
+  border: 1px solid gray;
   padding: 15px;
+  color: gray !important;
   margin-left: 170px;
 }
+
+
 
 .woocommerce input {
   border-radius: 4px;
@@ -922,7 +942,7 @@ tr.order-total td {
 .woocommerce-checkout textarea {
   border-radius: 4px;
   border-style: none;
-  border: 1px solid #cfcfcf;
+  border: 1px solid gray;
 }
 
 .woocommerce table.shop_table {
@@ -1052,6 +1072,18 @@ tr.cart_item td.product-name {
 
 /* media Query Area */
 
+@media screen and (max-width: 1024px) {
+    .hero__image .brush__stroke  {
+       left:10px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .page .hero__image .tag__line  {
+       left:10px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .hero__image .brush__stroke  {
         left:0px;
@@ -1064,17 +1096,7 @@ tr.cart_item td.product-name {
     }
 }
 
-@media screen and (max-width: 1024px) {
-    .hero__image .brush__stroke  {
-       left:10px;
-    }
-}
 
-@media screen and (max-width: 1024px) {
-    .page .hero__image .tag__line  {
-       left:10px;
-    }
-}
 @media screen and (max-width: 480px) {
     .hero__image .brush__stroke h1 {
         font-size: 30px;
