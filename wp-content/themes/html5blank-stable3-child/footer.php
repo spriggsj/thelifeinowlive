@@ -9,11 +9,11 @@
       </div>
       <div class="col-md-4 col-sm-4 col-xs-4 social__butterfly">
         <h1>Social Butterfly</h1>
-          <div class="col-md-2 col-sm-3 xs-5">
+          <div class="col-md-2 col-sm-3 ">
             <li><a href="https://twitter.com/thelifeinowlive" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/twitter.svg" alt="" /></a></li>
             <li><a href="https://www.facebook.com/thelifeinowlive/?fref=ts" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/facebook.svg" alt="" /></a></li>
           </div>
-          <div class="col-md-3 col-sm-4 col-xs-8">
+          <div class="col-md-3 col-sm-4 ">
             <li><a href="https://www.pinterest.com/thelifeinowlive/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/pinterest.svg" alt="" /></a></li>
             <li><a href="https://www.instagram.com/thelifeinowlive/?hl=en" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/instagram.svg" alt="" /></a></li>
           </div>
@@ -50,7 +50,7 @@
         </div>
         <div class="col-md-6 col-sm-6 copyright">
           <p>
-              &copy; <?php echo date('Y'); ?> All Rights Reserved <?php _e(); ?>
+              &copy; 2016 All Rights Reserved 
           </p>
         </div>
       </div>
