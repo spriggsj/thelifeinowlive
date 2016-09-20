@@ -5,12 +5,12 @@ $(document).ready(function(){
     if (startchange.length){
    $(document).scroll(function() { 
       scroll_start = $(this).scrollTop();
-      if(scroll_start > offset.top) {
-          $(".navbar-default").css('background-color', 'rgba(25, 25, 25, .06)');
+      if(scroll_start > offset.top) 
+          $(".navbar-default").css('background-color', 'rgba(121, 86, 171, .67)');
        } else {
           $('.navbar-default').css('background-color', 'transparent');
        }
    });
     }
-    console.log('hello');
+  
 });

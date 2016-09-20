@@ -84,7 +84,7 @@ body {
   src: url("./fonts/magnolia_sky.otf") format("opentype");
 }
 .navbar-default{
-  background: transparent;
+ background: rgba(121, 86, 171, 0.67);
   border:none !important;
 }
 .navbar-nav>li>a:hover{
@@ -1265,6 +1265,54 @@ tr.cart_item td.product-name {
 }
 .the__life h1 {
     font-size: 28px;
+}
+
+}
+
+@media (max-width:320px){
+.hero__image .brush__stroke {
+    
+    left: 0px;
+    width: 278px;
+}
+.hero__image .tag__line {
+    left: 0px;
+    
+    
+}
+.hero__image .tag__line p {
+    font-size: 14px;
+   
+}
+.sanity__header {
+    left: 9px;
+    width: 265px;
+}
+.sparkle__brushstroke h1 {
+    font-size: 41px;
+    top: 31px;
+    left: 47px;
+}
+.sparkle__brushstroke {
+    left: 0px;
+    width: 270px;
+}
+.hero__image .brush__stroke h1 {
+    font-size: 23px;
+    top: 20px;
+}
+.self .self__header h1 {
+    font-size: 69px;
+    top: 17px;
+}
+.sanity h1 {
+    
+    font-size: 48px;
+    
+    
+}
+.the__life h1 {
+    font-size: 19px;
 }
 
 }
