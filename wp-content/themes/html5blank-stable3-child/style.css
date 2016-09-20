@@ -1316,3 +1316,6 @@ tr.cart_item td.product-name {
 }
 
 }
+a.checkout-button.button.alt.wc-forward {
+    display: none;
+}
