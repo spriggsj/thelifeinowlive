@@ -11,7 +11,7 @@
         <h1>Social Butterfly</h1>
           <div class="col-md-2">
             <li><a href="https://twitter.com/thelifeinowlive" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/twitter.svg" alt="" /></a></li>
-            <li><a href="https://www.facebook.com/profile.php?id=100010741058990&fref=ts" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/facebook.svg" alt="" /></a></li>
+            <li><a href="https://www.facebook.com/thelifeinowlive/?fref=ts" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/facebook.svg" alt="" /></a></li>
           </div>
           <div class="col-md-3">
             <li><a href="https://www.pinterest.com/thelifeinowlive/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/pinterest.svg" alt="" /></a></li>
