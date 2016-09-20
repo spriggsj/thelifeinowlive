@@ -10,14 +10,14 @@
 
     	<title>The Life I Now Live</title>
 
-    	
+
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
-      
+
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    
+
     	<?php wp_head(); ?>
 
 
@@ -44,15 +44,18 @@
                               wp_nav_menu( array(
                               'menu' => 'primary',
                               'theme-location' => 'primary',
+                              'items_wrap' => my_nav_wrap(),
                               'depth' => 2,
                               // 'items_wrap' => my_nav_wrap(),
                               'menu_class' => 'nav navbar-nav navbar-right',
                               'fallback-cb' => 'wp_bootstrap_navwalker::fallback',
                               //Process nav menu using our custom nav walker
                               'walker' => new wp_bootstrap_navwalker())
-                              );
+                            );
 
                           ?>
+                      
+
 
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->

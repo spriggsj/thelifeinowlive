@@ -34,7 +34,7 @@ get_header( 'shop' ); ?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
-			<div class="container-fluid">
+			<div class="container-fluid single__shop__page">
 				<div class="row">
 
 

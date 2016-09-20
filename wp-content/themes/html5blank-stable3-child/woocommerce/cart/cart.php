@@ -22,11 +22,16 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 wc_print_notices();
 
+
 do_action( 'woocommerce_before_cart' ); ?>
+
+
 
 <form action="<?php echo esc_url( wc_get_cart_url() ); ?>" method="post">
 
 <?php do_action( 'woocommerce_before_cart_table' ); ?>
+
+
 
 <table class="shop_table shop_table_responsive cart" cellspacing="0">
 	<thead>
