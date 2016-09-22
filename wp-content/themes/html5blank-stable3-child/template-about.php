@@ -72,7 +72,7 @@
               </div>
                 <div class="col-md-10">
                   <div class="col-md-1 quote">"</div>
-                  <p class="Test__Kristina">
+                  <p class="test__p">
             I am so thankful for the group I was a part of!  I was going through post-partum after my third child and it was such a hard time for me mentally, I really didn’t have an outlet.  Then I heard about this study and I immediately said yes.  For me, it was an answer to prayer because I thought how awesome it would be for there to be a group where there was both a workout and a Bible study – working out our bodies and our souls.  After joining the class, it was way more than I expected.  I got accountability and an outlet; I felt cared for and my body started to feel normal again.  It gave me the push I needed!  I am going through the study again because as a mom of 3, I need it again!  Katie does such a good job making it all worship!  Every week, I can’t wait for the next class.  I saw a transformation in my body and my soul.  I look forward to what God will do in me through this class again.<br>
                      <span> ~Kristina N, 35~</span>
                   </p>
@@ -90,9 +90,25 @@
               </div>
                 <div class="col-md-10">
                   <div class="col-md-1 quote">"</div>
-                  <p class="test__marilyn">
+                  <p class="test__p">
                   I took Katie Williamson's class "The Life I now Live," last spring.  I was a little hesitant because I am 73 years old and I was afraid I wouldn't be able to keep up.  No need to fear.  The exercises were not difficult and easy to modify.  The most powerful part of the study was the discussion that went along with the curriculum.  Many basic biblical and psychological principles were interwoven into the lessons.   These principles were used to help us develop a working discipline for both the physical and spiritual areas of our lives.  Attention was given to discovering what things and attitudes blocked our progress.  I was challenged by the study and I'm planning on repeating it this fall.  I would give this study a five-star rating!<br>
                      <span> ~Marilyn Peters, 73~</span>
+                  </p>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="container testamonial">
+            <div class="row">
+              <div class="col-md-2 testamonial__img">
+                <img src=" <?php echo get_stylesheet_directory_uri(); ?>/img/TestimonialHannah.jpg" alt="" />
+              </div>
+                <div class="col-md-10">
+                  <div class="col-md-1 quote">"</div>
+                  <p class="test__p">
+                I really enjoyed this bible study with Katie. I thought it was encouraging, and was so motivated each week to pursue health in different ways, whether it was in my eating, exercise, spiritual life, or interpersonal relationships. I learned that I am capable of much more than I previously thought, and would love to continue growing! It was challenging, fun, and encouraging.<br>
+                     <span> ~Hannah E, 24~</span>
                   </p>
                 </div>
               </div>
