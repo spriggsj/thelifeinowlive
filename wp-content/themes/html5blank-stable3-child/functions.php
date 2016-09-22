@@ -36,7 +36,7 @@ function jk_excerpt_length( $length) {
     add_filter( 'excerpt_length', 'jk_excerpt_length', 999 );
 
 		function jk_excerpt_more( $more ) {
-			return '...Read More';
+			return '...';
 	}
 	add_filter( 'excerpt_more', 'jk_excerpt_more' );
 
@@ -76,6 +76,11 @@ function posts_shortcode( $atts ) {
 						$output .= '<p>';
 							$output .= get_the_excerpt();
 						$output .= '</p>';
+						$output .= '<a href="';
+						$output .= get_the_permalink();
+						$output .= '">';
+						$output .= 'Read More';
+						$output .= '</a>';
 				}
 				elseif ($i==1){
 					$output .= '<h1>';
@@ -84,7 +89,13 @@ function posts_shortcode( $atts ) {
 					$output .= '<p>';
 						$output .= get_the_excerpt();
 					$output .= '</p>';
+					$output .= '<a href="';
+					$output .= get_the_permalink();
+					$output .= '">';
+					$output .= 'Read More';
+					$output .= '</a>';
 					$output .= '</div>';
+
 				}
 				elseif ($i==2){
 					$output .= '<div class="col-sm-4 col-md-4 self__header">';
@@ -102,6 +113,12 @@ function posts_shortcode( $atts ) {
 					$output .= '<p>';
 						$output .= get_the_excerpt();
 					$output .= '</p>';
+					$output .= '<a href="';
+					$output .= get_the_permalink();
+					$output .= '">';
+					$output .= 'Read More';
+					$output .= '</a>';
+
 				}
 
 				else{
@@ -111,6 +128,11 @@ function posts_shortcode( $atts ) {
 					$output .= '<p>';
 						$output .= get_the_excerpt();
 					$output .= '</p>';
+					$output .= '<a href="';
+					$output .= get_the_permalink();
+					$output .= '">';
+					$output .= 'Read More';
+					$output .= '</a>';
 					$output .= '</div>';
 				}
 
