@@ -36,6 +36,11 @@
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -65,7 +70,7 @@
 
       <header class="<?php if (is_front_page()){echo 'home';} else { echo "page"; }?>">
             <div class="hero__image">
-              <div class="brush__stroke">
+              <div class="brush__stroke" id="startchange">
                 <h1>the life I now live</h1>
               </div>
               <div class="tag__line">

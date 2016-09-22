@@ -56,24 +56,24 @@ body {
   url("./img/lights.jpg")no-repeat;
   background-position: 17% 54%;
   min-height: 0px;
-  height: 200px;
+  height: 350px;
   width: 100%;
   overflow: hidden;
 }
 
 .page .hero__image .brush__stroke{
-  top:10px;
+  top:115px;
 }
 
 .page .hero__image .tag__line {
-  top: -243px;
-  left: 430px;
+  top: -135px;
+  left: 400px;
   width: 100%;
 
 }
 
 .page .hero__image .tag__line p{
-   font-size: 18px;
+   font-size: 20px;
 
 }
 
@@ -84,7 +84,7 @@ body {
   src: url("./fonts/magnolia_sky.otf") format("opentype");
 }
 .navbar-default{
- background: rgba(121, 86, 171, 0.67);
+ background: transparent;
   border:none !important;
 }
 .navbar-nav>li>a:hover{
@@ -92,8 +92,23 @@ body {
 }
 .collapse.in{
 
-    background-color:#f0f0f0 !important;
+    background-color:#7956ab !important;
 }
+
+
+.navbar-default .navbar-toggle{
+  border: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar{
+  background-color: #a348cd;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+  background-color: transparent;
+}
+
+
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus
 .spacer{
    background-color:#888;
@@ -123,9 +138,9 @@ body {
 }
 
 .navbar-default .navbar-nav li .circle__price {
-  width: 20px;
-  height: 20px;
-  background: #d28bea;
+  width: 17px;
+  height: 17px;
+  background: #8cbdeb;
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
   border-radius: 83%;
@@ -136,7 +151,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 12px;
+  font-size: 11px;
 }
 
 .navbar-right{
@@ -199,6 +214,11 @@ body {
   text-align: center;
 }
 
+.self .self__first__col a{
+  font-family: Bitter;
+  font-size: 17px;
+}
+
 .self .self__first__col h1 {
   font-family: 'Bitter', 'serif';
   font-size: 30px;
@@ -225,6 +245,11 @@ body {
 
 .self .self__second__col {
   text-align: center;
+}
+
+.self .self__second__col a{
+  font-family: Bitter;
+  font-size: 17px;
 }
 
 .self .self__second__col h1 {
@@ -485,13 +510,11 @@ hr{
   font-style: italic;
 }
 
-.testamonial .Test__Kristina{
+.testamonial .test__p{
   margin-left: 80px;
 }
 
-.testamonial .test__marilyn{
-  margin-left: 80px;
-}
+
 
 .testamonial__img img{
   margin-bottom: 10px;
@@ -1085,6 +1108,87 @@ tr.cart_item td.product-name {
 
 /* media Query Area */
 
+/* start of 4k media */
+
+@media (min-width: 2560px){
+  /* front page */
+  .hero__image .brush__stroke{
+    left:1500px;
+  }
+  .hero__image .tag__line{
+    left:1540px;
+  }
+  .hero__image{
+    height: 1300px;
+    min-height: 0px;
+  }
+  .woocommerce ul.products li.product h3{
+    font-size: 32px;
+  }
+  .woocommerce ul.products li.product span{
+    font-size: 32px;
+  }
+  a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart{
+    font-size: 22px;
+  }
+  .sanity__header{
+    left: 1000px;
+  }
+
+.self .self__header h1 {
+    font-size: 120px;
+    top: 26px;
+}
+.self .self__first__col h1{
+  font-size:52px;
+}
+.self .self__first__col p{
+  font-size: 22px;
+}
+.self .self__first__col a{
+  font-size: 23px;
+}
+.self .self__second__col h1{
+  font-size: 52px;
+}
+.self .self__second__col p{
+  font-size: 22px;
+}
+.self .self__second__col a{
+  font-size: 23px;
+}
+.sanity h1 {
+    font-size: 127px;
+    top: 3px;
+    left: 97px;
+}
+.woocommerce.columns-3{
+  padding: 40px 0;
+}
+.sparkle__brushstroke{
+  left:1000px;
+}
+
+.sparkle__brushstroke h1 {
+    font-size: 111px;
+    top: 13px;
+    left: 75px;
+}
+/* end of front page */
+/*start of the about me page*/
+.page .hero__image .tag__line{
+      left: 1520px;
+}
+  .aboutContent p{
+    font-size: 27px;
+  }
+  .testamonial p{
+    font-size: 25px;
+  }
+}
+
+/* end of 4k media */
+
 @media (max-width:1030px){
     .hero__image .brush__stroke {
         background: url(./img/purplestroke.svg) no-repeat;
@@ -1271,18 +1375,18 @@ tr.cart_item td.product-name {
 
 @media (max-width:320px){
 .hero__image .brush__stroke {
-    
+
     left: 0px;
     width: 278px;
 }
 .hero__image .tag__line {
     left: 0px;
-    
-    
+
+
 }
 .hero__image .tag__line p {
     font-size: 14px;
-   
+
 }
 .sanity__header {
     left: 9px;
@@ -1306,16 +1410,17 @@ tr.cart_item td.product-name {
     top: 17px;
 }
 .sanity h1 {
-    
+
     font-size: 48px;
-    
-    
+
+
 }
 .the__life h1 {
     font-size: 19px;
 }
 
 }
+
 a.checkout-button.button.alt.wc-forward {
     display: none;
 }
