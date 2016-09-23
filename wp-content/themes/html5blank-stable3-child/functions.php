@@ -222,7 +222,7 @@ if ( ! function_exists( 'woocommerce_quantity_input' ) ) {
 
 		if ( ! empty( $defaults['max_value'] ) )
 		$max = $defaults['max_value'];
-		else $max = 20;
+		else $max = 100;
 
 		if ( ! empty( $defaults['step'] ) )
 		$step = $defaults['step'];
