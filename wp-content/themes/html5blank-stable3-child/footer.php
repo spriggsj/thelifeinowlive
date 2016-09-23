@@ -4,8 +4,8 @@
     <div class="row">
       <div class="col-md-4 col-sm-4 col-xs-4 contact__info">
         <h1>Contact Info</h1>
-        <li><a href="#">Phone Number: (559)333-2325</a></li>
-        <li><a href="#">Email: living@gmail.com</a></li>
+        <li><a href="#">Phone Number: (559)281-6920</a></li>
+        <li><a href="#">Email: ka.ma.williamson@gmail.com</a></li>
       </div>
       <div class="col-md-4 col-sm-4 col-xs-4 social__butterfly">
         <h1>Social Butterfly</h1>
@@ -50,7 +50,7 @@
         </div>
         <div class="col-md-6 col-sm-6 copyright">
           <p>
-              &copy; 2016 All Rights Reserved 
+              &copy; 2016 All Rights Reserved
           </p>
         </div>
       </div>
