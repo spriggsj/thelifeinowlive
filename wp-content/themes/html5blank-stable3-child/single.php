@@ -36,13 +36,12 @@
 			<?php the_content(); // Dynamic Content ?>
 			</div>
 
-			<span class="date"><?php the_time('F j, Y'); ?> <?php the_time('g:i a'); ?></span>
-			<span class="comments"><?php if (comments_open( get_the_ID() ) ) comments_popup_link( __(), __( '1 Comment', 'html5blank' ), __( '% Comments', 'html5blank' )); ?></span>
+		
 			<!-- /post details -->
 
 			<?php the_tags( __( 'Tags: ', 'html5blank' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
 
-			
+
 
 			<!-- post details -->
 
