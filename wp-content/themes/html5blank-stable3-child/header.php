@@ -24,7 +24,7 @@
 
 
 		<meta name="google-site-verification" content="kgQiUkQVJ6es6NlZfJrGMOfqJFYPJqOgQnhiE_0TE1I" />
-    
+
       <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -85,7 +85,7 @@
                 <h1>the life I now live</h1>
               </div>
               <div class="tag__line">
-                <p>Empowering others to reclaim their self, sanity, and sparkle to live a new life of freedom</p>
+                <p>Empowering others to discover emotional and spiritual freedom through reclaiming their physical health</p>
               </div>
             </div>
 
