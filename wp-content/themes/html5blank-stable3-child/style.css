@@ -1511,3 +1511,10 @@ a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart{
 }
 
 }
+
+a.checkout-button.button.alt.wc-forward {
+    display: none !important;
+}
+
+.wcppec-checkout-buttons__separator {
+    display: none !important;
